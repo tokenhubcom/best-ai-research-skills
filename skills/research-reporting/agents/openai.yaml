@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Reporting"
+  short_description: "Turn an evidence set into a decision-ready report"
+  default_prompt: "Use $research-reporting to turn this existing evidence set into a traceable report with findings, recommendations, and limitations."
