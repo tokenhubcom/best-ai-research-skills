@@ -1,0 +1,4 @@
+interface:
+  display_name: "Data Analysis"
+  short_description: "Analyze structured data with reproducible methods"
+  default_prompt: "Use $data-analysis to inspect this dataset and report reproducible findings, assumptions, and limitations."
