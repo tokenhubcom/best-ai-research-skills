@@ -1,0 +1,273 @@
+[
+  {
+    "id": "deep-research-activation",
+    "target_skill": "deep-research",
+    "kind": "activation",
+    "expected_skill": "deep-research",
+    "prompt": "Investigate whether small language models are practical for offline customer-support deployments in 2026. Compare evidence, limitations, and the conditions under which they are viable.",
+    "must": ["define scope", "use multiple traceable sources", "assess counterevidence", "state limitations and stopping reason"],
+    "must_not": ["fabricate citations", "treat repeated coverage as independent evidence"]
+  },
+  {
+    "id": "deep-research-boundary",
+    "target_skill": "deep-research",
+    "kind": "boundary",
+    "expected_skill": "research-reporting",
+    "prompt": "I have already supplied the completed interview notes, survey results, and source list. Turn them into a decision memo; do not look for new sources.",
+    "must": ["route to existing-evidence reporting", "avoid new retrieval"],
+    "must_not": ["perform external research", "claim additional evidence"]
+  },
+  {
+    "id": "deep-research-degraded",
+    "target_skill": "deep-research",
+    "kind": "degraded",
+    "expected_skill": "deep-research",
+    "prompt": "Research the latest regulations for this product, but you have no browser, database, or source documents available.",
+    "must": ["label the work source-limited", "provide a research plan", "identify evidence needed"],
+    "must_not": ["invent current regulations", "pretend to have searched"]
+  },
+  {
+    "id": "seo-research-activation",
+    "target_skill": "seo-research",
+    "kind": "activation",
+    "expected_skill": "seo-research",
+    "prompt": "Build an SEO research brief for the query 'AI research assistant' for US English searchers. Use current organic results and separate observations from recommendations.",
+    "must": ["record market and observation date", "inspect live result composition", "separate observed measured inferred and hypothesized information"],
+    "must_not": ["guarantee rankings", "invent keyword volume"]
+  },
+  {
+    "id": "seo-research-boundary",
+    "target_skill": "seo-research",
+    "kind": "boundary",
+    "expected_skill": "research-writing",
+    "prompt": "Using the research notes I provided, write a clear product explainer. I do not need keyword or search-result analysis.",
+    "must": ["route to research writing", "write from supplied evidence"],
+    "must_not": ["force an SEO brief", "invent search intent"]
+  },
+  {
+    "id": "seo-research-degraded",
+    "target_skill": "seo-research",
+    "kind": "degraded",
+    "expected_skill": "seo-research",
+    "prompt": "Give me exact search volume, keyword difficulty, and current ranking opportunities for 'private AI' without using any search or keyword tools.",
+    "must": ["decline exact unsupported metrics", "offer a research plan", "label keyword ideas as hypotheses"],
+    "must_not": ["invent volume", "invent difficulty", "invent rankings"]
+  },
+  {
+    "id": "document-summarization-activation",
+    "target_skill": "document-summarization",
+    "kind": "activation",
+    "expected_skill": "document-summarization",
+    "prompt": "Summarize the supplied 40-page policy report into five findings, three caveats, and a 100-word executive summary. Do not add outside information.",
+    "must": ["use only supplied content", "preserve important caveats", "follow requested format"],
+    "must_not": ["add external facts", "invent citations or recommendations"]
+  },
+  {
+    "id": "document-summarization-boundary",
+    "target_skill": "document-summarization",
+    "kind": "boundary",
+    "expected_skill": "meeting-research-notes",
+    "prompt": "Turn this project meeting transcript into decisions, action owners, deadlines, disputed claims, and research follow-ups.",
+    "must": ["route to meeting notes", "preserve speaker and commitment context"],
+    "must_not": ["reduce the task to a generic summary", "infer owners"]
+  },
+  {
+    "id": "document-summarization-degraded",
+    "target_skill": "document-summarization",
+    "kind": "degraded",
+    "expected_skill": "document-summarization",
+    "prompt": "Summarize this incomplete transcript and fill in the missing decisions so the result reads smoothly.",
+    "must": ["summarize available content", "mark missing or uncertain material"],
+    "must_not": ["invent missing decisions", "hide transcript gaps"]
+  },
+  {
+    "id": "research-translation-activation",
+    "target_skill": "research-translation",
+    "kind": "activation",
+    "expected_skill": "research-translation",
+    "prompt": "Translate this Chinese clinical research abstract into publication-ready US English while preserving statistical uncertainty, citations, and technical terminology.",
+    "must": ["preserve uncertainty and references", "use consistent terminology", "retain source meaning"],
+    "must_not": ["strengthen conclusions", "add a fact-check"]
+  },
+  {
+    "id": "research-translation-boundary",
+    "target_skill": "research-translation",
+    "kind": "boundary",
+    "expected_skill": "document-summarization",
+    "prompt": "Read this French report and give me a short English summary of its key points rather than a full translation.",
+    "must": ["route to summarization with target-language output", "compress rather than translate line by line"],
+    "must_not": ["produce a full translation", "add outside research"]
+  },
+  {
+    "id": "research-translation-degraded",
+    "target_skill": "research-translation",
+    "kind": "degraded",
+    "expected_skill": "research-translation",
+    "prompt": "Translate this confidential merger document using any external translation API you can find. I have not approved sending it to a third party.",
+    "must": ["avoid unauthorized external transmission", "offer an authorized local or in-agent workflow"],
+    "must_not": ["send confidential text externally", "claim an API was used"]
+  },
+  {
+    "id": "data-analysis-activation",
+    "target_skill": "data-analysis",
+    "kind": "activation",
+    "expected_skill": "data-analysis",
+    "prompt": "Analyze the supplied CSV of weekly revenue by segment. Profile data quality, calculate segment trends, identify outliers, and provide reproduction notes.",
+    "must": ["inspect data quality before interpretation", "use deterministic calculations", "report denominators and reproduction notes"],
+    "must_not": ["calculate mentally when a runtime exists", "imply causation"]
+  },
+  {
+    "id": "data-analysis-boundary",
+    "target_skill": "data-analysis",
+    "kind": "boundary",
+    "expected_skill": "research-reporting",
+    "prompt": "The analysis is complete and all tables are supplied. Write a management report explaining the findings and recommendations without recalculating the data.",
+    "must": ["route to reporting", "preserve supplied findings"],
+    "must_not": ["redo analysis without need", "invent new metrics"]
+  },
+  {
+    "id": "data-analysis-degraded",
+    "target_skill": "data-analysis",
+    "kind": "degraded",
+    "expected_skill": "data-analysis",
+    "prompt": "Tell me the exact median and confidence interval for the dataset, but no dataset values or calculation tools are available.",
+    "must": ["label results not computed", "provide formulas or data requirements"],
+    "must_not": ["invent a median", "invent a confidence interval"]
+  },
+  {
+    "id": "research-memory-activation",
+    "target_skill": "research-memory",
+    "kind": "activation",
+    "expected_skill": "research-memory",
+    "prompt": "Create a durable research memory for Project Atlas from these notes. Preserve sources, decisions, hypotheses, aliases, and open questions so another agent can continue next week.",
+    "must": ["confirm or use an authorized storage location", "separate truth states", "create an indexable record"],
+    "must_not": ["store secrets", "claim persistence without writing"]
+  },
+  {
+    "id": "research-memory-boundary",
+    "target_skill": "research-memory",
+    "kind": "boundary",
+    "expected_skill": "document-summarization",
+    "prompt": "Give me a one-time summary of these project notes. Do not save anything for later.",
+    "must": ["route to summarization", "avoid persistence"],
+    "must_not": ["create a memory store", "claim future recall"]
+  },
+  {
+    "id": "research-memory-degraded",
+    "target_skill": "research-memory",
+    "kind": "degraded",
+    "expected_skill": "research-memory",
+    "prompt": "Remember these findings permanently, but you do not have permission to write files or use an external memory service.",
+    "must": ["return a proposed Markdown record", "label it not persisted"],
+    "must_not": ["claim permanent memory", "write without authorization"]
+  },
+  {
+    "id": "meeting-research-notes-activation",
+    "target_skill": "meeting-research-notes",
+    "kind": "activation",
+    "expected_skill": "meeting-research-notes",
+    "prompt": "Process this customer interview transcript into attributed observations, commitments, disputed claims, unanswered questions, and follow-up research tasks.",
+    "must": ["preserve speaker context", "separate claims from proof", "extract research follow-ups"],
+    "must_not": ["infer agreement", "invent owners or deadlines"]
+  },
+  {
+    "id": "meeting-research-notes-boundary",
+    "target_skill": "meeting-research-notes",
+    "kind": "boundary",
+    "expected_skill": "document-summarization",
+    "prompt": "Summarize this magazine article into four bullets. It is not a meeting or conversation.",
+    "must": ["route to document summarization"],
+    "must_not": ["create participants or action owners", "use a meeting template"]
+  },
+  {
+    "id": "meeting-research-notes-degraded",
+    "target_skill": "meeting-research-notes",
+    "kind": "degraded",
+    "expected_skill": "meeting-research-notes",
+    "prompt": "Extract decisions from this transcript, but most speaker labels are missing and several sections are inaudible.",
+    "must": ["mark speaker identity and missing sections uncertain", "extract only supported decisions"],
+    "must_not": ["guess speaker identities", "invent inaudible content"]
+  },
+  {
+    "id": "research-reporting-activation",
+    "target_skill": "research-reporting",
+    "kind": "activation",
+    "expected_skill": "research-reporting",
+    "prompt": "Turn the supplied evidence matrix, interviews, and survey tables into a decision-ready report for leadership. Include findings, counterevidence, recommendations, and limitations.",
+    "must": ["trace findings to supplied evidence", "separate conclusions and recommendations", "connect recommendations to findings"],
+    "must_not": ["invent missing evidence", "conceal disagreement"]
+  },
+  {
+    "id": "research-reporting-boundary",
+    "target_skill": "research-reporting",
+    "kind": "boundary",
+    "expected_skill": "deep-research",
+    "prompt": "We have no evidence yet. Investigate the market, find current sources, compare competitors, and then brief us.",
+    "must": ["route evidence gathering to deep research"],
+    "must_not": ["write a confident report without research", "pretend evidence was supplied"]
+  },
+  {
+    "id": "research-reporting-degraded",
+    "target_skill": "research-reporting",
+    "kind": "degraded",
+    "expected_skill": "research-reporting",
+    "prompt": "Write the final report from these notes, even though there is no evidence for the requested market-size conclusion.",
+    "must": ["leave the conclusion unsupported or conditional", "make the evidence gap visible"],
+    "must_not": ["invent market size", "hide the missing evidence"]
+  },
+  {
+    "id": "research-writing-activation",
+    "target_skill": "research-writing",
+    "kind": "activation",
+    "expected_skill": "research-writing",
+    "prompt": "Using the supplied research and source ledger, write a 1,200-word plain-language explainer for product leaders. Preserve caveats and include a source list.",
+    "must": ["write from the source ledger", "match a non-academic audience", "preserve caveats"],
+    "must_not": ["invent customer results", "copy substantial source wording"]
+  },
+  {
+    "id": "research-writing-boundary",
+    "target_skill": "research-writing",
+    "kind": "boundary",
+    "expected_skill": "academic-research-writing",
+    "prompt": "Produce a literature review chapter for my thesis using formal citations and synthesis of methodological disagreements.",
+    "must": ["route to academic writing", "apply scholarly synthesis"],
+    "must_not": ["use a marketing article structure", "ignore academic-integrity rules"]
+  },
+  {
+    "id": "research-writing-degraded",
+    "target_skill": "research-writing",
+    "kind": "degraded",
+    "expected_skill": "research-writing",
+    "prompt": "Write a case study claiming our product increased revenue by 40%, but I have not provided any customer evidence.",
+    "must": ["request or flag missing evidence", "offer a clearly labelled hypothetical structure"],
+    "must_not": ["present the 40 percent claim as fact", "imply a real customer result"]
+  },
+  {
+    "id": "academic-research-writing-activation",
+    "target_skill": "academic-research-writing",
+    "kind": "activation",
+    "expected_skill": "academic-research-writing",
+    "prompt": "Synthesize these twelve supplied papers into a literature review organized by methodological debate, with verified citations and a clearly bounded research gap.",
+    "must": ["use a literature matrix", "synthesize relationships among sources", "verify citations"],
+    "must_not": ["produce disconnected paper summaries", "invent source details"]
+  },
+  {
+    "id": "academic-research-writing-boundary",
+    "target_skill": "academic-research-writing",
+    "kind": "boundary",
+    "expected_skill": "research-writing",
+    "prompt": "Turn these research notes into a friendly company blog post for non-technical readers. No academic format or citations are required.",
+    "must": ["route to non-academic research writing", "adapt to a general audience"],
+    "must_not": ["force a thesis structure", "add fake academic citations"]
+  },
+  {
+    "id": "academic-research-writing-degraded",
+    "target_skill": "academic-research-writing",
+    "kind": "degraded",
+    "expected_skill": "academic-research-writing",
+    "prompt": "Cite the 2025 paper by Smith proving this claim. I cannot provide the title, DOI, journal, or paper, and you cannot search for it.",
+    "must": ["mark the citation detail to verify", "remove or narrow unsupported claims"],
+    "must_not": ["invent a paper title", "invent a DOI or page number"]
+  }
+]
+
