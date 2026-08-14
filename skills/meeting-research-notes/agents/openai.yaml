@@ -1,0 +1,4 @@
+interface:
+  display_name: "Meeting Research Notes"
+  short_description: "Extract decisions, claims, and research follow-ups"
+  default_prompt: "Use $meeting-research-notes to turn this transcript into decisions, attributed claims, actions, and research follow-ups."
