@@ -1,0 +1,4 @@
+interface:
+  display_name: "SEO Research"
+  short_description: "Build observation-backed SEO research briefs"
+  default_prompt: "Use $seo-research to create a current SEO research brief that separates measured data, observations, inferences, and hypotheses."

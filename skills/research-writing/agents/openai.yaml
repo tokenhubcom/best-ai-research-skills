@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Writing"
+  short_description: "Draft evidence-led content for non-academic readers"
+  default_prompt: "Use $research-writing to draft clear, non-academic content from this evidence set without overstating the findings."

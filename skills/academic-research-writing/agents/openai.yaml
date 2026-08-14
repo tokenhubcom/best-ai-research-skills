@@ -1,0 +1,4 @@
+interface:
+  display_name: "Academic Research Writing"
+  short_description: "Build citation-aware academic research drafts"
+  default_prompt: "Use $academic-research-writing to synthesize these sources into an academic draft with verified citations."

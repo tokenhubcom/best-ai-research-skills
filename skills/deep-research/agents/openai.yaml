@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deep Research"
+  short_description: "Research complex questions with traceable evidence"
+  default_prompt: "Use $deep-research to investigate this question using traceable sources, counterevidence, and explicit limitations."

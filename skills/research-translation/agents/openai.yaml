@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Translation"
+  short_description: "Translate research while preserving evidence and terms"
+  default_prompt: "Use $research-translation to translate this research while preserving terminology, uncertainty, citations, and structure."
