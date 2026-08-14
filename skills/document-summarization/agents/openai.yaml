@@ -1,0 +1,4 @@
+interface:
+  display_name: "Document Summarization"
+  short_description: "Summarize supplied material with fidelity checks"
+  default_prompt: "Use $document-summarization to summarize this material while preserving key facts, caveats, and open questions."
