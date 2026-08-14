@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Memory"
+  short_description: "Maintain a durable, source-aware research record"
+  default_prompt: "Use $research-memory to create or update a durable research record with sources, decisions, hypotheses, and open questions."
